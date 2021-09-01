@@ -1,0 +1,18 @@
+//- =========================
+//- pre
+//- =========================
+pre {
+  color: #333;
+  font-size: 13px;
+  background: #f0f0f0;
+  border: 1px solid #ececec;
+  width: 450px;
+  border-left: 4px solid #41b883;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+input[type="checkbox"]::after,
+input[type="checkbox"]::before {
+  border: solid 1px #ff0000;
+}

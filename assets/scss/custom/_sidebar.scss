@@ -1,0 +1,121 @@
+.sidebar {
+  background: $white;
+  border-right: solid 1px #f1f3f5;
+  width: 240px;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  position: sticky;
+  overflow-x: hidden;
+  overflow-y: auto
+}
+
+.b-sidebar-header {
+  border-bottom: solid 1px #f1f3f5;
+}
+
+#sidebar-right___title__ {
+  font-size: 16px;
+}
+
+//- menu
+
+.smenu {
+  position: relative;
+
+  ul.smn {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+
+  ul.smn li.head {
+    font-weight: 600;
+    list-style: none;
+    padding: 3px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333;
+  }
+
+  ul.smn li.menu {
+    cursor: pointer;
+    list-style: none;
+    padding: 3px 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+    .micon {
+      width: 18px;
+      color: #999;
+    }
+
+    .mtitle {
+      font-family: 'roboto';
+      font-size: 14px;
+      padding: 3px 0 0 10px;
+      flex-grow: 1;
+    }
+
+    .mcount {
+      padding-left: 10px
+    }
+
+
+  }
+
+  ul.smn li.menu:hover,
+  ul.smn li.menu.active {
+    background: #f9f9fa;
+  }
+
+}
+
+.sidebar.mini {
+  width: 80px;
+
+  .noicon {
+    display: none;
+  }
+}
+
+.sidebar.mini .smenu {
+
+  li.head {
+    font-size: 9px;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  li.menu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+
+    .micon {
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    .mtitle {
+      display: none;
+    }
+  }
+
+  .mdi-18px.mdi-set,
+  .mdi-18px.mdi::before {
+    font-size: 26px;
+  }
+
+  .mcount {
+    display: none
+  }
+}
