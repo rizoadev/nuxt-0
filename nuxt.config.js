@@ -9,7 +9,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
     ]
   },
 
@@ -46,7 +49,8 @@ export default {
   ],
   bootstrapVue: {
     bootstrapCSS: false, // Or `css: false`
-    bootstrapVueCSS: true // Or `bvCSS: false`
+    bootstrapVueCSS: true, // Or `bvCSS: false`
+    bootstrapIcon: false
   },
   generate: {
     // choose to suit your project
