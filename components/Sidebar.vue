@@ -64,12 +64,5 @@ export default {
     onMounted(() => {})
     return { res }
   },
-  head() {
-    return {
-      bodyAttrs: {
-        class: this.res.themeClass ? 'bg-dark' : '',
-      },
-    }
-  },
 }
 </script>

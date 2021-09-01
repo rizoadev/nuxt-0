@@ -79,8 +79,9 @@ export default {
   },
   setup() {
     const res = reactive({
-      themeClass: true,
+      themeClass: false,
       clickL: () => {
+        require('consola').info('asasas')
         res.themeClass = !res.themeClass
       },
     })
